@@ -10,18 +10,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+WITH_GMS_MINIMAL := true
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := arrow_lavender
+PRODUCT_NAME := lineage_lavender
 PRODUCT_MODEL := Redmi Note 7
 
-DEVICE_MAINTAINER := Ratoriku, Hazama25
+DEVICE_MAINTAINER := MiTESH
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
