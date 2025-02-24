@@ -15,7 +15,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-WITH_GMS_MINIMAL := true
+#WITH_GMS_MINIMAL := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
